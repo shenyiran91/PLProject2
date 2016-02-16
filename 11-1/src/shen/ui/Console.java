@@ -1,6 +1,6 @@
-package cannata;
+package shen.ui;
 
-public class HelloWorld {
+public class Console {
 
     public static void main(String[] args) {
         // Prints "Hello, World" to the terminal window.
