@@ -1,10 +1,24 @@
 package shen.business;
 
-public class Customer {
+public class Customer extends Person {
 
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
+    private String CustomerNum;
+
+    public Customer() {
+        super();
+        CustomerNum = "";
     }
 
+    public void setCustomerNum(String CustomerNum) {
+        this.CustomerNum = CustomerNum;
+    }
+
+    public String getCustomerNum() {
+        return CustomerNum;
+    }
+
+    @Override
+    public String getDisplayText() {
+        return super.toString() + "Customer number :  " + getCustomerNum();
+    }
 }
