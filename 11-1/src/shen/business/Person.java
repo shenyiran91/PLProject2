@@ -2,20 +2,11 @@ package shen.business;
 
 public abstract class Person {
 
-    private String Type;
     private String FirstName;
     private String LastName;
     private String EmailAdd;
 
     public Person() {
-    }
-
-    public void setType(String Type) {
-        this.Type = Type;
-    }
-
-    public String getType() {
-        return Type;
     }
 
     public void setFirstName(String FirstName) {

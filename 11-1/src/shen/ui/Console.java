@@ -24,64 +24,50 @@ public class Console {
         String t = sc.nextLine();
         return t;
     }
-    public static String getCFName(String prompt){
-        System.out.print(prompt);
+
+
+    public static void displayCustomer (){
+        System.out.print("Enter first name: ");
         String FName = sc.nextLine();
         Customer c = new Customer();
         c.setFirstName(FName);
 
-    }
-
-    public static String getCLName(String prompt){
-        System.out.print(prompt);
+        System.out.print("Enter last name: ");
         String LName = sc.nextLine();
-        Customer c = new Customer();
         c.setLastName(LName);
-    }
 
-    public static String getCEAdd(String prompt){
-        System.out.print(prompt);
+        System.out.print("Enter email Address: ");
         String Eadd = sc.nextLine();
-        Customer c = new Customer();
         c.setEmailAdd(Eadd);
+
+        System.out.print("Enter Customer umber: ");
+        String Cnum = sc.nextLine();
+        c.setCustomerNum(Cnum);
+
+        System.out.print("You entered: " + "\n" +c.getDisplayText());
     }
 
-    public static String getEFName(String prompt){
-        System.out.print(prompt);
+
+
+    public static void displayEmpolyee (){
+        System.out.print("Enter first name: ");
         String FName = sc.nextLine();
         Employee e = new Employee();
         e.setFirstName(FName);
-    }
 
-    public static String getELName(String prompt){
-        System.out.print(prompt);
+        System.out.print("Enter last name: ");
         String LName = sc.nextLine();
-        Employee e = new Employee();
         e.setLastName(LName);
-    }
 
-    public static String getEEAdd(String prompt){
-        System.out.print(prompt);
+        System.out.print("Enter email Address: ");
         String Eadd = sc.nextLine();
-        Employee e = new Employee();
         e.setEmailAdd(Eadd);
-    }
-    public static String getCNum(String prompt){
-        System.out.print(prompt);
-        String Cnum = sc.nextLine();
-        Customer c = new Customer();
-        c.setCustomerNum(Cnum);
-    }
-    public static String getSSN(String prompt){
-        System.out.print(prompt);
+
+        System.out.print("Social security number: ");
         String SSN = sc.nextLine();
-        Employee e = new Employee();
         e.setSSN(SSN);
-    }
-    public static void displayCText(){
-        System.out.print("You entered: " + "\n" +c.getDisplayText());
-    }
-    public static void displayEText(){
+
         System.out.print("You entered: " + "\n" +e.getDisplayText());
     }
+
 }
