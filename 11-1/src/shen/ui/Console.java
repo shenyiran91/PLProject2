@@ -21,6 +21,7 @@ public class Console {
     }
 
     public static String gettype(String type){
+        System.out.print(type);
         String t = sc.nextLine();
         return t;
     }
@@ -44,6 +45,8 @@ public class Console {
         String Cnum = sc.nextLine();
         c.setCustomerNum(Cnum);
 
+        System.out.println();
+
         System.out.print("You entered: " + "\n" +c.getDisplayText());
     }
 
@@ -66,6 +69,8 @@ public class Console {
         System.out.print("Social security number: ");
         String SSN = sc.nextLine();
         e.setSSN(SSN);
+
+        System.out.println();
 
         System.out.print("You entered: " + "\n" +e.getDisplayText());
     }

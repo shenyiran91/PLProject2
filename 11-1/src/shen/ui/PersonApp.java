@@ -11,16 +11,16 @@ public class PersonApp {
         String choice = "y";
         while (choice.equalsIgnoreCase("y")){
             String type = Console.gettype("Create customer or employee? (c/e): ");
-            while (type.equalsIgnoreCase("c")){
+            Console.displayLine();
+            if (type.equalsIgnoreCase("c")){
                 Console.displayCustomer();
                 Console.displayLine();
-
             }
-            while (type.equalsIgnoreCase("e")){
+            else if (type.equalsIgnoreCase("e")){
                 Console.displayEmpolyee();
                 Console.displayLine();
             }
-
+            Console.displayLine();
             choice = Console.getString("Continue? (y/n): ");
             Console.displayLine();
         }
