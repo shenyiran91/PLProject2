@@ -1,10 +1,8 @@
 package shen.account.interfaces;
 
-public class Balanceable {
+public interface Balanceable {
 
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
-    }
+  double getBalance();
+  void setBalance(double amount);
 
 }

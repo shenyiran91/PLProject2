@@ -41,7 +41,7 @@ public class Console {
         String Eadd = sc.nextLine();
         c.setEmailAdd(Eadd);
 
-        System.out.print("Enter Customer umber: ");
+        System.out.print("Enter Customer number: ");
         String Cnum = sc.nextLine();
         c.setCustomerNum(Cnum);
 
